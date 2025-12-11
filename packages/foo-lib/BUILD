@@ -13,12 +13,13 @@ ts_project(
     preserve_jsx = False,
     source_map = True,
     tsconfig = ":tsconfig",
+    visibility = ["//visibility:public"],
 )
 
 ts_config(
     name = "tsconfig",
     src = "tsconfig.json",
-    visibility = [":__subpackages__"],
+    visibility = ["//visibility:public"],
 )
 
 js_library(
