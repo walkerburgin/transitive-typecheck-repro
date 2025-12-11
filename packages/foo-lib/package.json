@@ -1,0 +1,9 @@
+{
+  "name": "@monorepo/foo-lib",
+  "exports": {
+    ".": {
+      "types": "./index.d.mts",
+      "default": "./index.mjs"
+    }
+  }
+}

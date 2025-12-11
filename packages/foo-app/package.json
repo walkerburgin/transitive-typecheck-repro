@@ -1,0 +1,6 @@
+{
+  "name": "@monorepo/foo-app",
+  "dependencies": {
+    "@monorepo/foo-lib": "workspace:*"
+  }
+}
