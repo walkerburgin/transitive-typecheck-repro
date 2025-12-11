@@ -8,4 +8,4 @@ Repro:
   ```
 - Run `bazel build //packages/foo-app:foo-app_transitive_typecheck` and observe that the build does **not** fail like we would expect
 
-I think the issue is that `aspect_rules_js` is not forwarding the `transitive_typecheck` information correctly when the dependency goes through `node_modules` 🤔
+I think the issue is that `aspect_rules_js` is not forwarding the `transitive_typecheck` output group through the various layers of indirection 🤔.
